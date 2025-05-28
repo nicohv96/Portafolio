@@ -1,0 +1,67 @@
+[
+  {
+    "title": "Gestión de heladeria",
+    "image": "./img/projects/sistema-heladeria.webp",
+    "description": "Sistema web diseñado para la gestión eficiente de clientes, productos y ventas en una heladería.",
+    "full_description": "Este proyecto es una aplicación web construida con Laravel que facilita la administración integral de una heladería. Ofrece funcionalidades clave como el registro y gestión de clientes, control de productos con inventarios actualizables, y un sistema de ventas que permite seleccionar clientes, añadir productos a las órdenes, y calcular totales automáticamente. Además, el sistema ajusta el inventario en tiempo real tras cada transacción, asegurando un control preciso del stock. El diseño del sistema es intuitivo y responsive, proporcionando una experiencia de usuario óptima tanto en dispositivos móviles como de escritorio. Esta herramienta está pensada para agilizar las operaciones diarias y mejorar la eficiencia administrativa de la heladería.",
+    "technologies": [
+      "Laravel",
+      "Boostrap",
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
+    "demoLink": "#",
+    "codeLink": "https://github.com/nicohv96/sistema_heladeria.git"
+  },
+  {
+    "title": "E-Commerce",
+    "image": "./img/projects/api.webp",
+    "description": "Tienda online con carrito de compras y pasarelas de pago integradas.Tienda online con carrito de compras y pasarelas de pago integradas.Tienda online con carrito de compras y pasarelas de pago integradas.Tienda online con carrito de compras y pasarelas de pago integradas.Tienda online con carrito de compras y pasarelas de pago integradas.Tienda online con carrito de compras y pasarelas de pago integradas.Tienda online con carrito de compras y pasarelas de pago integradas.",
+    "full_description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia atque eius dolorem corrupti provident harum repellat, earum magni eveniet quasi voluptatem magnam repellendus amet officiis aut incidunt qui doloremque deleniti. Deserunt et debitis autem rerum accusamus optio similique itaque, incidunt modi fugiat labore blanditiis voluptas vitae, maiores atque sapiente suscipit provident saepe? Perferendis placeat hic iste illo, animi unde? Saepe?",
+    "technologies": [
+      "Laravel",
+      "Liverwire",
+      "Boostrap"
+    ],
+    "demoLink": "#",
+    "codeLink": "#"
+  },
+  {
+    "title": "E-Commerce",
+    "image": "./img/projects/api.webp",
+    "description": "Tienda online con carrito de compras y pasarelas de pago integradas.",
+    "full_description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia atque eius dolorem corrupti provident harum repellat, earum magni eveniet quasi voluptatem magnam repellendus amet officiis aut incidunt qui doloremque deleniti. Deserunt et debitis autem rerum accusamus optio similique itaque, incidunt modi fugiat labore blanditiis voluptas vitae, maiores atque sapiente suscipit provident saepe? Perferendis placeat hic iste illo, animi unde? Saepe?",
+    "technologies": [
+      "Laravel",
+      "Liverwire",
+      "Boostrap"
+    ],
+    "demoLink": "#",
+    "codeLink": "#"
+  },
+  {
+    "title": "Dashboard Analítico",
+    "image": "./img/projects/fondo-card.webp",
+    "description": "Panel de métricas con gráficos interactivos y filtros avanzados.",
+    "full_description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia atque eius dolorem corrupti provident harum repellat, earum magni eveniet quasi voluptatem magnam repellendus amet officiis aut incidunt qui doloremque deleniti. Deserunt et debitis autem rerum accusamus optio similique itaque, incidunt modi fugiat labore blanditiis voluptas vitae, maiores atque sapiente suscipit provident saepe? Perferendis placeat hic iste illo, animi unde? Saepe?",
+    "technologies": [
+      "React",
+      "Chart.js"
+    ],
+    "demoLink": "#",
+    "codeLink": "#"
+  },
+  {
+    "title": "Dashboard Analítico",
+    "image": "./img/projects/fondo-card.webp",
+    "description": "Panel de métricas con gráficos interactivos y filtros avanzados.",
+    "full_description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia atque eius dolorem corrupti provident harum repellat, earum magni eveniet quasi voluptatem magnam repellendus amet officiis aut incidunt qui doloremque deleniti. Deserunt et debitis autem rerum accusamus optio similique itaque, incidunt modi fugiat labore blanditiis voluptas vitae, maiores atque sapiente suscipit provident saepe? Perferendis placeat hic iste illo, animi unde? Saepe?",
+    "technologies": [
+      "React",
+      "Chart.js"
+    ],
+    "demoLink": "#",
+    "codeLink": "#"
+  }
+]
