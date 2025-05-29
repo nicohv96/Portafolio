@@ -227,7 +227,7 @@ document.getElementById('form-contact').addEventListener('submit', (e) => {
     }
   });
 
-  fetch("https://formsubmit.co/ajax/", {
+  fetch("https://formsubmit.co/ajax/nicohv96@gmail.com", {
     method: "POST",
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ Nombre: name.value, Email: email.value, Mensaje: message.value })
