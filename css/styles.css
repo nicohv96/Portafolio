@@ -2,6 +2,7 @@
   --border-radius: 5px;
   --border-color: #2c2e3ac5;
   --text-color-hover: #59eaf7;
+  --background-color-solid: #121420;
   --background-color: #121420bb;
   --background-color-hover: #1c1f2e8a;
   --background-color-active: #25283ad0;
@@ -14,6 +15,7 @@
 html {
   scroll-behavior: smooth;
   box-sizing: border-box;
+  scrollbar-gutter: stable;
 }
 
 *,
@@ -39,7 +41,6 @@ html {
 
 /*===============================Estilos a etiquetas===============================*/
 body {
-  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -58,7 +59,7 @@ h4 {
 }
 
 .no-scroll {
-  overflow: auto;
+  overflow: hidden;
 }
 
 /*===============================Estilos genericos===============================*/
@@ -960,9 +961,10 @@ nav ul li a:active {
 }
 
 .card-img-top {
-  width: 100%;
   aspect-ratio: 16 / 9;
   object-fit: cover;
+  width: 100%;
+  display: block;
   border-bottom: 3px solid #004fa3;
 }
 
@@ -1026,7 +1028,7 @@ nav ul li a:active {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: .7rem;
+  font-size: .8rem;
   color: #ffffff;
   padding: 3px 10px;
   background-color: #004fa3;
@@ -1352,8 +1354,7 @@ textarea:focus-visible {
   padding: 20px;
   border: 1px solid var(--border-color);
   border-radius: var(--border-radius);
-  background: var(--gradient-color-3);
-  backdrop-filter: blur(20px);
+  background: var(--background-color-solid);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 

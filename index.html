@@ -9,11 +9,11 @@
    <title>Portafolio - Nicolas Villalba</title>
    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
    <link rel="stylesheet" href="./assets/sweetalert2/css/sweetalert2.min.css">
+   <link rel="stylesheet" href="./assets/fancybox/css/fancybox.css">
    <link rel="stylesheet" href="./css/styles.css">
 </head>
 
 <body>
-
    <header class="header">
       <div class="content-header">
          <a href="#home" class="brand">
@@ -21,8 +21,8 @@
          </a>
          <nav class="nav">
             <ul class="menu">
-               <li><a href="#about-me">Sobre mi</a></li>
                <li><a href="#projects">Proyectos</a></li>
+               <li><a href="#about-me">Sobre mi</a></li>
                <li><a href="#contact">Contacto</a></li>
             </ul>
          </nav>
@@ -63,6 +63,22 @@
          </div>
       </section>
 
+      <section class="projects" id="projects">
+         <div class="title-section">
+            <h3 class="text-gradient">Proyectos</h3>
+         </div>
+         <div class="subtitle-section-projects">
+            <div class="p-projects">
+               <h4>Explora algunos de los trabajos más destacados que he desarrollado recientemente.</h4>
+            </div>
+         </div>
+         <div class="content-projects">
+            <div class="projects-grid" id="projects-grid">
+
+            </div>
+         </div>
+      </section>
+
       <section class="about-me" id="about-me">
          <div class="title-section">
             <h3 class="text-gradient">Sobre mi</h3>
@@ -95,7 +111,7 @@
                </div>
                <div class="stat-card">
                   <h2><span class="big-plus">+</span>13</h2>
-                  <p>Tecnologías dominadas</p>
+                  <p>Tecnologías utilizadas</p>
                </div>
             </div>
          </div>
@@ -146,12 +162,6 @@
                            Otorgado por C&oacute;digofacilito.
                         </p>
                      </li>
-                     <li>
-                        <h4>Programming for Everybody with Python</h4>
-                        <p>
-                           Otorgado por Coursera.
-                        </p>
-                     </li>
                   </ul>
                </div>
             </div>
@@ -174,22 +184,6 @@
          </div>
       </section>
 
-      <section class="projects" id="projects">
-         <div class="title-section">
-            <h3 class="text-gradient">Proyectos</h3>
-         </div>
-         <div class="subtitle-section-projects">
-            <div class="p-projects">
-               <h4>Explora algunos de los trabajos más destacados que he desarrollado recientemente.</h4>
-            </div>
-         </div>
-         <div class="content-projects">
-            <div class="projects-grid" id="projects-grid">
-
-            </div>
-         </div>
-      </section>
-
       <section class="contact" id="contact">
          <div class="title-section">
             <h3 class="text-gradient">Contacto</h3>
@@ -200,8 +194,7 @@
             </div>
             <div class="form-container">
                <h2>¡Contactemos!</h2>
-               <!-- <form id="form-contact" method="post"> -->
-               <form action="" method="post">
+               <form id="form-contact" method="post">
                   <div class="form-group">
                      <label for="name">Nombre:</label>
                      <input type="text" id="name" name="name" placeholder="Ingrese su nombre" autocomplete="name">
@@ -308,8 +301,8 @@
          </a>
       </div>
       <ul class="burger-menu">
-         <li><a href="#about-me">Sobre mi</a></li>
          <li><a href="#projects">Proyectos</a></li>
+         <li><a href="#about-me">Sobre mi</a></li>
          <li><a href="#contact">Contacto</a></li>
       </ul>
    </nav>
@@ -340,7 +333,64 @@
    <!-- scripts -->
    <script src="./js/particles.min.js"></script>
    <script src="./assets/sweetalert2/js/sweetalert2.all.min.js"></script>
+   <script src="./assets/fancybox/js/fancybox.umd.js"></script>
    <script src="./js/main.js"></script>
+   <script>
+      Fancybox.bind('[data-fancybox="gallery-1"]', {
+         hideScrollbar: false,
+         animated: true,
+         dragToClose: true,
+         click: "close",
+         idle: false,
+         Thumbs: false,
+         infinite: false,
+         preload: 0,
+      });
+
+      Fancybox.bind('[data-fancybox="gallery-2"]', {
+         hideScrollbar: false,
+         animated: true,
+         dragToClose: true,
+         click: "close",
+         idle: false,
+         Thumbs: false,
+         infinite: false,
+         preload: 0,
+      });
+
+      Fancybox.bind('[data-fancybox="gallery-3"]', {
+         hideScrollbar: false,
+         animated: true,
+         dragToClose: true,
+         click: "close",
+         idle: false,
+         Thumbs: false,
+         infinite: false,
+         preload: 0,
+      });
+
+      Fancybox.bind('[data-fancybox="gallery-4"]', {
+         hideScrollbar: false,
+         animated: true,
+         dragToClose: true,
+         click: "close",
+         idle: false,
+         Thumbs: false,
+         infinite: false,
+         preload: 0,
+      });
+
+      Fancybox.bind('[data-fancybox="gallery-5"]', {
+         hideScrollbar: false,
+         animated: true,
+         dragToClose: true,
+         click: "close",
+         idle: false,
+         Thumbs: false,
+         infinite: false,
+         preload: 0,
+      });
+   </script>
 </body>
 
 </html>

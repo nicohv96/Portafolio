@@ -2,66 +2,76 @@
   {
     "title": "Gestión de heladeria",
     "image": "./img/projects/sistema-heladeria.webp",
-    "description": "Sistema web diseñado para la gestión eficiente de clientes, productos y ventas en una heladería.",
+    "description": "Sistema web para la gestión de clientes, productos y ventas en una heladería.",
     "full_description": "Este proyecto es una aplicación web construida con Laravel que facilita la administración integral de una heladería. Ofrece funcionalidades clave como el registro y gestión de clientes, control de productos con inventarios actualizables, y un sistema de ventas que permite seleccionar clientes, añadir productos a las órdenes, y calcular totales automáticamente. Además, el sistema ajusta el inventario en tiempo real tras cada transacción, asegurando un control preciso del stock. El diseño del sistema es intuitivo y responsive, proporcionando una experiencia de usuario óptima tanto en dispositivos móviles como de escritorio. Esta herramienta está pensada para agilizar las operaciones diarias y mejorar la eficiencia administrativa de la heladería.",
     "technologies": [
       "Laravel",
       "Boostrap",
       "HTML",
       "CSS",
-      "JavaScript"
+      "JavaScript",
+      "JQuery",
+      "DataTables"
     ],
     "demoLink": "#",
     "codeLink": "https://github.com/nicohv96/sistema_heladeria.git"
   },
   {
-    "title": "E-Commerce",
+    "title": "Finanzas Quant",
+    "image": "./img/projects/finanzas-quant.webp",
+    "description": "Landing Page para Financiera",
+    "full_description": "Este proyecto consiste en el diseño y desarrollo de una landing page responsiva para una financiera ficticia llamada Finanzas Quant. El objetivo principal es presentar de forma clara y profesional los servicios ofrecidos, destacando la confianza, accesibilidad y modernidad de la marca. Características principales: Diseño adaptable (responsive) para dispositivos móviles, tablets y escritorio. Enfoque visual atractivo con uso de colores institucionales y secciones bien definidas. Estructura clara de contenido: encabezado con llamado a la acción, sección de servicios, beneficios, contacto y pie de página. HTML, CSS, Bootstrap y JavaScript. Optimización básica para tiempos de carga rápidos y buena experiencia de usuario. Este proyecto simula el sitio principal de una empresa financiera, siendo ideal para presentar una primera impresión profesional y confiable a potenciales clientes. Ademas un apartado donde se puede ver distintas cotizaciones. Si se inicia sesión se puede agregar simbolos para ver su cotización en tiempo real.",
+    "technologies": [
+      "Vue.js",
+      "Boostrap",
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
+    "demoLink": "https://nicohv96.github.io/finanzas_quant/",
+    "codeLink": "https://github.com/nicohv96/finanzas_quant.git"
+  },
+  {
+    "title": "API - Finanzas Quant",
     "image": "./img/projects/api.webp",
-    "description": "Tienda online con carrito de compras y pasarelas de pago integradas.Tienda online con carrito de compras y pasarelas de pago integradas.Tienda online con carrito de compras y pasarelas de pago integradas.Tienda online con carrito de compras y pasarelas de pago integradas.Tienda online con carrito de compras y pasarelas de pago integradas.Tienda online con carrito de compras y pasarelas de pago integradas.Tienda online con carrito de compras y pasarelas de pago integradas.",
-    "full_description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia atque eius dolorem corrupti provident harum repellat, earum magni eveniet quasi voluptatem magnam repellendus amet officiis aut incidunt qui doloremque deleniti. Deserunt et debitis autem rerum accusamus optio similique itaque, incidunt modi fugiat labore blanditiis voluptas vitae, maiores atque sapiente suscipit provident saepe? Perferendis placeat hic iste illo, animi unde? Saepe?",
+    "description": "API para Finanzas Quant",
+    "full_description": "Esta API está diseñada para proporcionar acceso a usuarios (crear cuentas y logearse), permitiendo consultar y crear simbolos. Esta implementada con Python y Flask, la API ofrece endpoints para obtener información de diferentes activos financieros, volúmenes y cambios porcentuales. Además, se incluye un sistema de autenticación para proteger los endpoints sensibles.",
     "technologies": [
-      "Laravel",
-      "Liverwire",
-      "Boostrap"
+      "Python",
+      "Flask"
     ],
     "demoLink": "#",
-    "codeLink": "#"
+    "codeLink": "https://github.com/nicohv96/api_finanzas_quant.git"
   },
   {
-    "title": "E-Commerce",
-    "image": "./img/projects/api.webp",
-    "description": "Tienda online con carrito de compras y pasarelas de pago integradas.",
-    "full_description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia atque eius dolorem corrupti provident harum repellat, earum magni eveniet quasi voluptatem magnam repellendus amet officiis aut incidunt qui doloremque deleniti. Deserunt et debitis autem rerum accusamus optio similique itaque, incidunt modi fugiat labore blanditiis voluptas vitae, maiores atque sapiente suscipit provident saepe? Perferendis placeat hic iste illo, animi unde? Saepe?",
+    "title": "Panel administrativo",
+    "image": "./img/projects/administrative_panel.webp",
+    "description": "Maquetado de un panel administrativo con funcionalidades básicas.",
+    "full_description": "Este proyecto consiste en el maquetado de un panel administrativo responsivo utilizando HTML, CSS y JavaScript. El objetivo es crear una interfaz de usuario intuitiva y funcional que permita a los administradores gestionar diferentes aspectos de un sistema. Características principales: Diseño responsivo que se adapta a diferentes tamaños de pantalla. Secciones bien definidas para navegación, contenido principal y pie de página. Uso de iconos y tipografía clara para mejorar la usabilidad. Implementación de funcionalidades básicas como formularios con modal, tablas y botones interactivos. Este panel es ideal para aplicaciones administrativas donde se requiere una gestión eficiente y visualmente atractiva.",
     "technologies": [
-      "Laravel",
-      "Liverwire",
-      "Boostrap"
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "JQuery",
+      "DataTables"
     ],
-    "demoLink": "#",
-    "codeLink": "#"
+    "demoLink": "https://nicohv96.github.io/administrative_panel/",
+    "codeLink": "https://github.com/nicohv96/administrative_panel.git"
   },
   {
-    "title": "Dashboard Analítico",
+    "title": "Primmat",
     "image": "./img/projects/fondo-card.webp",
-    "description": "Panel de métricas con gráficos interactivos y filtros avanzados.",
-    "full_description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia atque eius dolorem corrupti provident harum repellat, earum magni eveniet quasi voluptatem magnam repellendus amet officiis aut incidunt qui doloremque deleniti. Deserunt et debitis autem rerum accusamus optio similique itaque, incidunt modi fugiat labore blanditiis voluptas vitae, maiores atque sapiente suscipit provident saepe? Perferendis placeat hic iste illo, animi unde? Saepe?",
+    "description": "Plataforma educativa gratuita para la enseñanza de matemática en primaria.",
+    "full_description": "Este proyecto consiste en una plataforma educativa gratuita diseñada para apoyar la enseñanza de matemática en el nivel primario, facilitando el uso de la tecnología tanto para maestros como para alumnos. Desarrollada con tecnologías como PHP, HTML, CSS y JavaScript, la herramienta ofrece un entorno interactivo y accesible. La plataforma permite a los docentes administrar y crear recursos didácticos personalizados, generando contenidos y ejercicios adaptados a las necesidades de sus estudiantes. Por su parte, los alumnos pueden acceder a estos ejercicios desde una interfaz sencilla e intuitiva, favoreciendo su aprendizaje y práctica de manera autónoma. Además, el proyecto se fundamenta en un análisis previo que identifica los recursos didácticos más utilizados y los principales desafíos en el aprendizaje de las matemáticas en primaria, con el fin de implementar soluciones efectivas a través del software. En conjunto, esta herramienta tecnológica busca mejorar la calidad educativa, motivar el aprendizaje activo y brindar soporte a la comunidad educativa en el área de matemáticas.",
     "technologies": [
-      "React",
-      "Chart.js"
+      "PHP",
+      "Bootstrap",
+      "MySQL",
+      "HTML",
+      "CSS",
+      "JavaScript"
     ],
     "demoLink": "#",
-    "codeLink": "#"
-  },
-  {
-    "title": "Dashboard Analítico",
-    "image": "./img/projects/fondo-card.webp",
-    "description": "Panel de métricas con gráficos interactivos y filtros avanzados.",
-    "full_description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia atque eius dolorem corrupti provident harum repellat, earum magni eveniet quasi voluptatem magnam repellendus amet officiis aut incidunt qui doloremque deleniti. Deserunt et debitis autem rerum accusamus optio similique itaque, incidunt modi fugiat labore blanditiis voluptas vitae, maiores atque sapiente suscipit provident saepe? Perferendis placeat hic iste illo, animi unde? Saepe?",
-    "technologies": [
-      "React",
-      "Chart.js"
-    ],
-    "demoLink": "#",
-    "codeLink": "#"
+    "codeLink": "https://github.com/nicohv96/Primmat"
   }
 ]

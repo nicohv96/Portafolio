@@ -93,6 +93,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   const modalDescription = document.getElementById("modalDescription");
   const modalTechnologies = document.getElementById("modalTechnologies");
   const modalLinks = document.getElementById("modalLinks");
+  const particlesJs = document.getElementById("particles-js");
 
   try {
     // Cargar el JSON con Fetch
@@ -105,28 +106,30 @@ document.addEventListener("DOMContentLoaded", async () => {
     const data = await response.json();
 
     // Generar las tarjetas dinámicamente
-    data.forEach(project => {
+    data.forEach((project, index) => {
       const card = document.createElement("div");
       card.className = "card";
 
       const firstTwoTechnologies = project.technologies.slice(0, 3).map(tech => `<span class="tag">${tech}</span>`).join(" ");
 
       card.innerHTML = `
-        <img src="${project.image}" class="card-img-top" alt="Sin Imagen">
-        <div class="card-body">
-          <h5 class="card-title">${project.title}</h5>
-          <p class="card-text">${project.description}</p>
-          <div class="card-footer">
-            <p class="content-technologies">
-              <strong>Tecnologías:</strong>
-              ${firstTwoTechnologies} <!-- Solo las primeras 3 tecnologías -->
-            </p>
-            <div class="content-buttons">
-              <button class="btn btn-more" data-project='${JSON.stringify(project)}'>Leer más</button>
-            </div>
-          </div>
+    <a href="${project.image}" data-fancybox="gallery-${index + 1}">
+      <img src="${project.image}" class="card-img-top" alt="Sin Imagen">
+    </a>
+    <div class="card-body">
+      <h5 class="card-title">${project.title}</h5>
+      <p class="card-text">${project.description}</p>
+      <div class="card-footer">
+        <p class="content-technologies">
+          <strong>Tecnologías:</strong>
+          ${firstTwoTechnologies}
+        </p>
+        <div class="content-buttons">
+          <button class="btn btn-more" data-project='${JSON.stringify(project)}'>Leer más</button>
         </div>
-      `;
+      </div>
+    </div>
+  `;
 
       grid.appendChild(card);
     });
@@ -208,7 +211,6 @@ const showToast = (icon, title, timer = 3000) => {
   });
 };
 
-/*
 document.getElementById('form-contact').addEventListener('submit', (e) => {
   e.preventDefault();
 
@@ -258,7 +260,6 @@ const validateForm = (name, email, message) => {
 const validateEmail = (email) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
 const addErrorStyle = (id) => document.getElementById(id).classList.add('input-error');
 const removeErrorStyles = () => document.querySelectorAll('.input-error').forEach(field => field.classList.remove('input-error'));
-*/
 
 //==============================Footer==============================
 // Función para insertar el año actual en el footer
