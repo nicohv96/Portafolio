@@ -1,54 +1,54 @@
 [
   {
     "name": "HTML",
-    "image": "./img/skills/html.svg"
+    "image": "./assets/img/skills/html.svg"
   },
   {
     "name": "CSS",
-    "image": "./img/skills/css.svg"
+    "image": "./assets/img/skills/css.svg"
   },
   {
     "name": "JavaScript",
-    "image": "./img/skills/js.svg"
+    "image": "./assets/img/skills/js.svg"
   },
   {
     "name": "PHP",
-    "image": "./img/skills/php.svg"
+    "image": "./assets/img/skills/php.svg"
   },
   {
     "name": "Python",
-    "image": "./img/skills/python.svg"
+    "image": "./assets/img/skills/python.svg"
   },
   {
     "name": "Java",
-    "image": "./img/skills/java.svg"
+    "image": "./assets/img/skills/java.svg"
   },
   {
     "name": "Git",
-    "image": "./img/skills/git.svg"
+    "image": "./assets/img/skills/git.svg"
   },
   {
     "name": "Bootstrap",
-    "image": "./img/skills/bootstrap.svg"
+    "image": "./assets/img/skills/bootstrap.svg"
   },
   {
     "name": "Vue.js",
-    "image": "./img/skills/vue.svg"
+    "image": "./assets/img/skills/vue.svg"
   },
   {
     "name": "Laravel",
-    "image": "./img/skills/laravel.svg"
+    "image": "./assets/img/skills/laravel.svg"
   },
   {
     "name": "Flask",
-    "image": "./img/skills/flask.svg"
+    "image": "./assets/img/skills/flask.svg"
   },
   {
     "name": "MySQL",
-    "image": "./img/skills/mysql.svg"
+    "image": "./assets/img/skills/mysql.svg"
   },
   {
     "name": "Illustrator",
-    "image": "./img/skills/illustrator.svg"
+    "image": "./assets/img/skills/illustrator.svg"
   }
 ]
