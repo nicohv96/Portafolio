@@ -198,7 +198,7 @@ function copyToClipboard() {
 }
 
 const getToastPosition = () => window.innerWidth <= 798 ? 'top' : 'top-end';
-
+/*
 const showToast = (icon, title, timer = 3000) => {
   Swal.fire({
     toast: true,
@@ -244,7 +244,7 @@ document.getElementById('form-contact').addEventListener('submit', (e) => {
       showToast('error', 'Hubo un error al enviar el formulario. Intentalo de nuevo.');
     });
 });
-
+*/
 const validateForm = (name, email, message) => {
   let isValid = true;
   removeErrorStyles();
