@@ -198,7 +198,7 @@ function copyToClipboard() {
 }
 
 const getToastPosition = () => window.innerWidth <= 798 ? 'top' : 'top-end';
-/*
+
 const showToast = (icon, title, timer = 3000) => {
   Swal.fire({
     toast: true,
@@ -210,7 +210,7 @@ const showToast = (icon, title, timer = 3000) => {
     timerProgressBar: true
   });
 };
-
+/*
 document.getElementById('form-contact').addEventListener('submit', (e) => {
   e.preventDefault();
 
