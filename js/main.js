@@ -186,6 +186,80 @@ document.addEventListener("DOMContentLoaded", async () => {
 });
 
 //==============================Email==============================
+function copyToClipboard() {
+  const email = "nicohv96@gmail.com";
+  navigator.clipboard.writeText(email)
+    .then(() => {
+      showToast('success', 'Email copiado al portapapeles.');
+    })
+    .catch(err => {
+      console.error("Error al copiar el texto: ", err);
+    });
+}
+
+const getToastPosition = () => window.innerWidth <= 798 ? 'top' : 'top-end';
+
+const showToast = (icon, title, timer = 3000) => {
+  Swal.fire({
+    toast: true,
+    position: getToastPosition(),
+    icon,
+    title,
+    showConfirmButton: false,
+    timer,
+    timerProgressBar: true
+  });
+};
+
+document.getElementById('form-contact').addEventListener('submit', (e) => {
+  e.preventDefault();
+
+  const { name, email, message } = e.target.elements;
+  if (!validateForm(name.value, email.value, message.value)) return;
+
+  Swal.fire({
+    toast: true,
+    position: getToastPosition(),
+    title: 'Procesando la solicitud...',
+    showConfirmButton: false,
+    didOpen: () => {
+      Swal.showLoading();
+    }
+  });
+
+  fetch("https://formsubmit.co/ajax/25f0c332a0698e709cb0170b1e7ce8da", {
+    method: "POST",
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ Nombre: name.value, Email: email.value, Mensaje: message.value })
+  })
+    .then(response => response.json())
+    .then(data => {
+      Swal.close();
+      showToast(data.success === "false" ? 'error' : 'success',
+        data.success === "false" ? 'Hubo un error al enviar el formulario. Intentalo de nuevo.' : 'Formulario enviado con éxito.');
+      if (data.success !== "false") e.target.reset();
+    })
+    .catch(() => {
+      Swal.close();
+      showToast('error', 'Hubo un error al enviar el formulario. Intentalo de nuevo.');
+    });
+});
+
+const validateForm = (name, email, message) => {
+  let isValid = true;
+  removeErrorStyles();
+
+  if (!name) { addErrorStyle('name'); isValid = false; }
+  if (!email || !validateEmail(email)) { addErrorStyle('email'); isValid = false; }
+  if (!message) { addErrorStyle('message'); isValid = false; }
+
+  if (!isValid) showToast('error', 'Por favor, corrige los errores en los campos resaltados.');
+  return isValid;
+};
+
+const validateEmail = (email) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+const addErrorStyle = (id) => document.getElementById(id).classList.add('input-error');
+const removeErrorStyles = () => document.querySelectorAll('.input-error').forEach(field => field.classList.remove('input-error'));
 
 //==============================Footer==============================
 // Función para insertar el año actual en el footer
