@@ -1,12 +1,10 @@
 //==============================DOM==============================
-const header = document.querySelector(".header");
-const nav = document.querySelector('.nav');
-const overlay = document.querySelector('.overlay');
-const topButton = document.querySelector('.top-button');
-const menuToggle = document.querySelector('.menu-toggle');
-const burgerNav = document.querySelector('.burger-nav');
 
 // Toggler para el menú
+const burgerNav = document.querySelector('.burger-nav');
+const menuToggle = document.querySelector('.menu-toggle');
+const overlay = document.querySelector('.overlay');
+
 const toggleMenu = () => {
   burgerNav.classList.toggle('show');
   menuToggle.classList.toggle('active');
@@ -15,6 +13,8 @@ const toggleMenu = () => {
 
 menuToggle.addEventListener('click', toggleMenu);
 overlay.addEventListener('click', toggleMenu);
+
+const nav = document.querySelector('.nav');
 
 window.addEventListener('resize', () => {
   if (window.innerWidth < 768) {
@@ -29,6 +29,9 @@ window.addEventListener('resize', () => {
 });
 
 // Scroll para activar la animación del encabezado y el botón superior
+const header = document.querySelector(".header");
+const topButton = document.querySelector('.top-button');
+
 window.addEventListener("scroll", () => {
   header.classList.toggle("down", window.scrollY > 0);
   topButton.classList.toggle("show", window.scrollY > 0);
