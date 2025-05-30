@@ -1,4 +1,0 @@
-/*
-  Content-Security-Policy: default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; object-src 'none'; base-uri 'self'; frame-ancestors 'none'
-  Cross-Origin-Opener-Policy: same-origin
-  X-Frame-Options: DENY
