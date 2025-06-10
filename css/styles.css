@@ -30,13 +30,11 @@ html {
 @font-face {
   font-family: "varino";
   src: url("../assets/fonts/varino.woff2") format("woff2");
-  font-display: swap;
 }
 
 @font-face {
   font-family: "roboto_light";
   src: url("../assets/fonts/roboto_light.woff2") format("woff2");
-  font-display: swap;
 }
 
 /*===============================Estilos a etiquetas===============================*/
@@ -141,6 +139,7 @@ h4 {
 }
 
 .webdev {
+  min-height: 52px;
   background-color: #131521;
   border-radius: var(--border-radius);
   background-origin: border-box;
@@ -515,6 +514,9 @@ nav ul li a:active {
 }
 
 .banner-title {
+  min-width: 361px;
+  min-height: 230px;
+  height: auto;
   width: auto;
   color: #ffffff;
   font-family: "varino";
