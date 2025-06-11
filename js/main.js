@@ -239,7 +239,7 @@ document.getElementById('form-contact').addEventListener('submit', (e) => {
     .then(data => {
       Swal.close();
       showToast(data.success === "false" ? 'error' : 'success',
-        data.success === "false" ? 'Hubo un error al enviar el formulario. Intentalo de nuevo.' : 'Formulario enviado con éxito.');
+        data.success === "false" ? 'Hubo un error al enviar el formulario. Intentalo de nuevo.' : 'Mensaje enviado con éxito.');
       if (data.success !== "false") e.target.reset();
     })
     .catch(() => {
