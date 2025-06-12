@@ -51,7 +51,7 @@ window.addEventListener("click", (event) => {
   }
 });
 
-//============================== Cargar habilidades ==============================
+//============================== Load skills ==============================
 document.addEventListener("DOMContentLoaded", async () => {
   const grid = document.getElementById("skills-grid");
 
@@ -87,7 +87,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   }
 });
 
-//============================== Cargar proyectos ==============================
+//============================== Load projects ==============================
 document.addEventListener("DOMContentLoaded", async () => {
   const grid = document.getElementById("projects-grid");
   const modal = document.getElementById("myModal");
@@ -189,7 +189,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 });
 
 //==============================Email==============================
-function copyToClipboard() {
+const copyToClipboard = () => {
   const email = "nicohv96@gmail.com";
   navigator.clipboard.writeText(email)
     .then(() => {
@@ -266,7 +266,7 @@ const removeErrorStyles = () => document.querySelectorAll('.input-error').forEac
 
 //==============================Footer==============================
 // Función para insertar el año actual en el footer
-function setFooterYear() {
+const setFooterYear = () => {
   const currentYear = new Date().getFullYear(); // Obtiene el año actual
   document.getElementById('footer-year').textContent = currentYear;
 }
@@ -275,7 +275,7 @@ function setFooterYear() {
 window.onload = setFooterYear;
 
 //==============================Cometas==============================
-function createComet() {
+const createComet = () => {
   const container = document.getElementById('particles-js');
   const comet = document.createElement('div');
   comet.classList.add('comet');
