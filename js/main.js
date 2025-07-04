@@ -38,8 +38,8 @@ window.addEventListener("scroll", () => {
 });
 
 //==============================Modal==============================
-const myModal = document.getElementById("myModal");
-const closeModalBtn = document.getElementById("closeModalBtn");
+const myModal = document.querySelector("#myModal");
+const closeModalBtn = document.querySelector("#closeModalBtn");
 
 closeModalBtn.addEventListener("click", () => {
   myModal.style.display = "none";
@@ -53,7 +53,7 @@ window.addEventListener("click", (event) => {
 
 //============================== Load skills ==============================
 document.addEventListener("DOMContentLoaded", async () => {
-  const grid = document.getElementById("skills-grid");
+  const grid = document.querySelector("#skills-grid");
 
   try {
     // Cargar el JSON con Fetch
@@ -89,14 +89,14 @@ document.addEventListener("DOMContentLoaded", async () => {
 
 //============================== Load projects ==============================
 document.addEventListener("DOMContentLoaded", async () => {
-  const grid = document.getElementById("projects-grid");
-  const modal = document.getElementById("myModal");
-  const closeModalBtn = document.getElementById("closeModalBtn");
-  const modalTitle = document.getElementById("modalTitle");
-  const modalDescription = document.getElementById("modalDescription");
-  const modalTechnologies = document.getElementById("modalTechnologies");
-  const modalLinks = document.getElementById("modalLinks");
-  const particlesJs = document.getElementById("particles-js");
+  const grid = document.querySelector("#projects-grid");
+  const modal = document.querySelector("#myModal");
+  const closeModalBtn = document.querySelector("#closeModalBtn");
+  const modalTitle = document.querySelector("#modalTitle");
+  const modalDescription = document.querySelector("#modalDescription");
+  const modalTechnologies = document.querySelector("#modalTechnologies");
+  const modalLinks = document.querySelector("#modalLinks");
+  const particlesJs = document.querySelector("#particles-js");
 
   try {
     // Cargar el JSON con Fetch
@@ -214,7 +214,7 @@ const showToast = (icon, title, timer = 3000) => {
   });
 };
 
-document.getElementById('form-contact').addEventListener('submit', (e) => {
+document.querySelector('#form-contact').addEventListener('submit', (e) => {
   e.preventDefault();
 
   const { name, email, message } = e.target.elements;
@@ -268,7 +268,7 @@ const removeErrorStyles = () => document.querySelectorAll('.input-error').forEac
 // Función para insertar el año actual en el footer
 const setFooterYear = () => {
   const currentYear = new Date().getFullYear(); // Obtiene el año actual
-  document.getElementById('footer-year').textContent = currentYear;
+  document.querySelector('#footer-year').textContent = currentYear;
 }
 
 // Ejecuta la función cuando la página se carga
@@ -276,7 +276,7 @@ window.onload = setFooterYear;
 
 //==============================Cometas==============================
 const createComet = () => {
-  const container = document.getElementById('particles-js');
+  const container = document.querySelector('#particles-js');
   const comet = document.createElement('div');
   comet.classList.add('comet');
 
