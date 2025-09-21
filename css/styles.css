@@ -512,7 +512,6 @@ nav ul li a:active {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  gap: 100px;
 }
 
 .banner-title {
