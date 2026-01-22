@@ -1,5 +1,22 @@
 [
   {
+    "title": "Concejo Deliberante de la Ciudad de Formosa",
+    "image": "./assets/img/projects/concejo.webp",
+    "description": "Sistema web institucional para la gestión, publicación y administración de la actividad legislativa del Concejo Deliberante.",
+    "full_description": "Aplicación web institucional desarrollada para el Concejo Deliberante de la Ciudad de Formosa, orientada a centralizar la carga, administración y publicación de información legislativa y administrativa. El sistema permite gestionar ordenanzas, sesiones, actos oficiales y registros de visitas, facilitando la organización y el acceso a la información tanto para el personal interno como para la ciudadanía.\n\nEl frontend fue desarrollado como una aplicación SPA utilizando Vue.js, priorizando una experiencia de usuario moderna, fluida y responsive. El backend fue implementado con Laravel, encargado de la lógica de negocio, la gestión de datos, la validación de información y la exposición de una API REST consumida por el frontend.\n\nEl proyecto abarca el desarrollo completo de la solución, incluyendo el análisis de requerimientos, diseño de la arquitectura, desarrollo del frontend y backend, integración entre ambas capas, configuración del entorno y despliegue en producción. El sistema fue diseñado con una estructura escalable y mantenible, permitiendo futuras ampliaciones y mejoras funcionales.",
+    "technologies": [
+      "Vue.js",
+      "Laravel",
+      "Bootstrap",
+      "HTML5",
+      "CSS3",
+      "JavaScript",
+      "API REST"
+    ],
+    "demoLink": "https://concejodeliberanteformosa.org/",
+    "codeLink": "#"
+  },
+  {
     "title": "Gestión de heladeria",
     "image": "./assets/img/projects/sistema-heladeria.webp",
     "description": "Sistema web para la gestión de clientes, productos y ventas en una heladería.",
